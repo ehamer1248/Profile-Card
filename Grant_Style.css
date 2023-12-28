@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: linear-gradient( rgb(28,21,37),rgb(63,244,110));
+    min-height: 100vh;
+    padding: 2rem;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+}
+.profile-card {
+    box-shadow: 0px 18px 200px -60px rgb(28,21,37);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgb(63,244,110);
+    border-radius: 50px;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    gap: 10px;
+    bottom: 80px;
+    padding: 25px 90px;
+
+}
+.logo {
+   position: absolute;
+   top: 82vh;
+}
+.grant {
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid rgb(63,244,110);
+    box-shadow: 0px 0px 10px 10px rgb(28,21,37);
+    display: flex;
+    scale: .8;
+    position: relative;
+    top: 35px
+}
+.profile-card_desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+
+}
+.profile-card_desc h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 5px solid rgb(63,244,110);
+    border-radius: 15px;
+    background: linear-gradient(45deg,rgb(117, 197, 138),rgb(63,244,110));
+    transition-duration: .2s;
+    position: relative;
+    top: 20px
+}
+.profile-card_desc h1:hover {
+    background:linear-gradient(45deg, rgb(63,244,110),rgb(117, 197, 138))
+}
+.profile-card_desc div {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.profile-card_desc span.location, svg.location {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    top: -20px;
+    margin-top: 5px;
+}
+
+.one, .two {
+    display: inline;
+    border: solid rgb(63,244,110);;
+    background: linear-gradient(45deg, rgb(63,244,110),rgb(117, 197, 138));
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    transition-duration: .2s;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    top:-10px
+}
+.one:hover, .two:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg,rgb(117, 197, 138),rgb(63,244,110));
+    box-shadow: 0px 0px 10px 2px;
+}
+.two {
+    margin-left: 75px;
+}
+.one{
+    left: 15px;
+}
+.profile-card-social a {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px 25px 0px 10px;
+    border-radius:40%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    flex-shrink: 0;
+
+}
+    
+.youtube {
+    background: linear-gradient(45deg,rgb(246,11,10),rgb(225, 132, 132));
+    box-shadow: 0px 0px 15px -3px rgb(28,21,37);
+    transition-duration: .2;
+    left: 90px;
+
+}
+.twitter {
+    background: linear-gradient(45deg,rgb(36,156,240),rgb(145, 196, 232));
+    box-shadow: 0px 0px 15px -3px rgb(28,21,37);
+    transition-duration: .2;
+    left: 185px;
+}
+.discord {
+    background: linear-gradient(45deg,rgb(96,113,219),rgb(155, 166, 234));
+    box-shadow: 0px 0px 15px -3px rgb(28,21,37);
+    transition-duration: .2;
+    right:175px;
+}
+.instagram {
+    background: linear-gradient(45deg, rgba(255,90,63,255),rgba(139,56,199,255),rgba(87,86,202,255));
+    box-shadow: 0px 0px 15px -3px rgb(28,21,37);
+    transition-duration: .2;
+    right: 80px;
+}
+.youtube:hover, .instagram:hover, .twitter:hover, .discord:hover {
+    box-shadow: 0px 0px 15px 1px rgb(69, 64, 75);
+}
+.profile-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px
+}
+.profile-card-info div {
+    text-transform: uppercase;
+    text-align: center;
+}
+.profile-card-info div.stat {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.profile-card-info div.stat-type {
+    opacity: .7;
+}
+
